@@ -9,12 +9,12 @@ public class FizzBuzz {
 //		3と5の両方で割り切れる数値の場合、「FizzBuzz」と表示する
 //		それ以外の数値は、その数値をそのまま表示する
 		for (int i=1; i<=100; i++) {
-			if (i%3 == 0) {
-				System.out.println("Fizz");
+			if ((i%3 == 0)&&(i%5 == 0)) {
+				System.out.println("FizzBuzz");
 			}else if(i%5==0){
 				System.out.println("Buzz");
-			}else if((i%3 == 0)&&(i%5 == 0)){
-				System.out.println("FizzBuzz");
+			}else if(i%3 == 0){
+				System.out.println("Fizz");
 			}else {
 				System.out.println(i);
 			}
